@@ -1,0 +1,118 @@
+body {
+    background-color:#0e0f28;
+    color: white;
+    font-family: 'Helvetica', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  p{
+    color: white;
+  }
+
+  img {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5rem;
+  }
+
+  .content {
+    max-width: 800px;
+  }
+
+  a {
+    margin-top: 2rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  /*FOTOS*/
+  .galeria {
+    margin-top: 3rem;
+  }
+  
+  .galeria h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+  }
+  
+  .fotos {
+    column-count: 3; /* quantidade de colunas */
+    column-gap: 15px;
+    padding: 20px;
+  }
+  
+  .fotos img,
+  .video-galeria {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    break-inside: avoid; /* evita quebra esquisita */
+  }
+  
+  
+  .fotos img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    transform: rotate(var(--rotate)) translate(var(--x), var(--y));
+  }
+  
+  /* Efeitos descontraídos com variáveis CSS */
+  .fotos img:nth-child(1) {
+    --rotate: -5deg;
+    --x: -10px;
+    --y: 5px;
+  }
+  .fotos img:nth-child(2) {
+    --rotate: 3deg;
+    --x: 8px;
+    --y: -12px;
+  }
+  .fotos img:nth-child(3) {
+    --rotate: -2deg;
+    --x: 6px;
+    --y: 4px;
+  }
+  .fotos img:nth-child(4) {
+    --rotate: 6deg;
+    --x: -5px;
+    --y: -10px;
+  }
+  /* ...continue para outras imagens */
+  
+  .fotos img:hover {
+    transform: scale(1.1) rotate(0deg) translate(0, 0);
+    z-index: 2;
+  }
+
+  @media (min-width: 768px) {
+    .fotos {
+      column-count: 4;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .fotos {
+      column-count: 5;
+    }
+  }
+  

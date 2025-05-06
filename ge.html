@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dj</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/gessi.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <title>gessi</title>
+</head>
+<body>
+    <img src="img/61.JPG" alt="Gessica" />
+    <div class="content">
+      <h1>Gessica </h1>
+      <p>
+        Gessica é aquela amiga que já vem com o combo completo:<br>
+        👯 parceira de longa data,<br>
+        🧠 conselheira oficial,<br>
+        😄 divertida nas horas boas,<br>
+        🧘‍♀️ séria nas horas certas.
+      </p>
+      <p>
+        Desde sempre estudamos juntos, e nossa amizade é daquelas que resiste ao tempo,
+        às provas difíceis e até à preguiça de viver (quando ela me arrasta pra fazer o que eu não quero, rs).
+      </p>
+      <p>
+        Se eu tô enrolando, ela aparece:<br>
+        <strong>“Bora fazer, menina!”</strong>
+      </p>
+      <p>
+        E no fim, é sempre ela quem me dá aquele empurrãozinho que eu precisava.
+      </p>
+      <p>
+        Com Gessica, a risada é garantida, o puxão de orelha vem com carinho, e a união é constante.
+        Não tem tempo ruim com ela — só momentos reais, engraçados e cheios de afeto.
+      </p>
+
+      <div class="galeria">
+        <h2>Momentos com Gessica 📸</h2>
+        <div class="fotos">
+          <img src="img/29.jpg" alt="Gessica em um momento especial" />
+          <img src="img/23.jpg" alt="Gessica sorrindo" />
+          <img src="img/52.JPG" alt="Gessica e amigas" />
+          <img src="img/55.JPG" alt="Gessica e amigas" />
+          <img src="img/31.jpg" alt="Gessica e amigas" />
+          <img src="img/17.jpg" alt="Gessica e amigas" />
+          <img src="img/56.JPG" alt="Gessica e amigas" />
+          <img src="img/42.jpg" alt="Gessica e amigas" />
+          <img src="img/71.jpeg" alt="Gessica e amigas" />
+          <img src="img/81.jpeg" alt="Gessica e amigas" />
+          <img src="img/83.jpeg" alt="Gessica e amigas" />
+          <img src="img/85.jpeg" alt="Gessica e amigas" />
+          <img src="img/86.jpeg" alt="Gessica e amigas" />
+          <img src="img/87.jpeg" alt="Gessica e amigas" />
+          <img src="img/88.jpeg" alt="Gessica e amigas" />
+          <img src="img/70.jpg" alt="Gessica e amigas" />
+          <!-- Vídeo com estilo semelhante às imagens -->
+          <video class="video-galeria" controls>
+            <source src="img/70.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+          </video>
+        </div>
+      </div>
+    
+  
+      <a href="paginaAmigos.html">← Voltar para a galeria</a>
+    </div>
+
+   
+  
+    <script>
+      // Animação com GSAP
+      gsap.from(".content", {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        ease: "power3.out"
+      });
+  
+      gsap.from("img", {
+        opacity: 0,
+        scale: 0.8,
+        duration: 1.2,
+        delay: 0.3,
+        ease: "power3.out"
+      });
+    </script>
+</body>
+</html>

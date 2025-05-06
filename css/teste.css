@@ -1,0 +1,13 @@
+/* Tema claro por padrão */
+body {
+    background-color: white;
+    color: black;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  /* Tema escuro */
+  body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  

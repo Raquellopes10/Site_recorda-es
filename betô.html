@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gessi.css">
+    <title>Betô</title>
+</head>
+<body>
+    <img src="img/73.jpg" alt="Gessica" />
+    <div class="content">
+      <h1>Kaio </h1>
+      <p>
+        Se tem uma coisa que o Kaio sabe fazer bem é ser mil e uma utilidades.<br>
+        👨‍🏫 Coach motivacional nas horas de crise.<br>
+        💪 Personal trainer quando alguém diz "quero começar a treinar".<br>
+        🧘 Psicólogo quando o mundo parece que vai desabar.<br>
+        🎤 E, claro, comediante oficial do grupo — porque com ele, até os problemas ficam mais leves.
+      </p>
+      <p>
+        Brincalhão, sempre com uma piada pronta e um sorriso no rosto, ele é aquele tipo de amigo que você chama pra tudo — e ele topa!
+      </p>
+
+      <p>
+        Kaio é aquele cara que ajuda todo mundo, sempre com um conselho na manga e uma palavra que acalma. 
+      </p>
+      <p>
+        Ser amigo do Kaio é rir, pensar, refletir… e no fim, perceber que ele tem razão (quase sempre 😅).”
+      </p>
+
+      <div class="galeria">
+        <h2>Momentos com Kaio 📸</h2>
+        <div class="fotos">
+          <img src="img/16.jpg" alt="Gessica em um momento especial" />
+          <img src="img/15.jpg" alt="Gessica sorrindo" />
+          <img src="img/13.jpg" alt="Gessica e amigas" />
+          <img src="img/34.jpg" alt="Gessica e amigas" />
+          <img src="img/69.jpg" alt="Gessica e amigas" />
+          <img src="img/72.jpg" alt="Gessica e amigas" />
+          <img src="img/1.jpg" alt="Gessica e amigas" />
+          <img src="img/73.jpg" alt="Gessica e amigas" />
+          <img src="img/74.jpg" alt="Gessica e amigas" />
+          <img src="img/75.jpg" alt="Gessica e amigas" />
+          <img src="img/78.jpg" alt="Gessica e amigas" />
+          <img src="img/98.jpg" alt="Gessica e amigas" />
+          <img src="img/100.jpg" alt="Gessica e amigas" />
+          <img src="img/99.jpg" alt="Gessica e amigas" />
+          
+          <!-- Vídeo com estilo semelhante às imagens -->
+          <video class="video-galeria" controls>
+            <source src="img/70.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+          </video>
+        </div>
+      </div>
+    
+  
+      <a href="paginaAmigos.html">← Voltar para a galeria</a>
+    </div>
+
+   
+  
+    <script>
+      // Animação com GSAP
+      gsap.from(".content", {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        ease: "power3.out"
+      });
+  
+      gsap.from("img", {
+        opacity: 0,
+        scale: 0.8,
+        duration: 1.2,
+        delay: 0.3,
+        ease: "power3.out"
+      });
+    </script>
+</body>
+</html>
