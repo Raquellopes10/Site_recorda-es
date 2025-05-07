@@ -90,3 +90,33 @@
       background-color: #fff;
       font-family: Arial, Helvetica, sans-serif;
     }
+
+    @media (max-width: 768px) {
+      .timeline-canva::after {
+        left: 8px;
+      }
+    
+      .timeline-item {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 15px;
+        margin-bottom: 30px;
+      }
+    
+      .timeline-item.left,
+      .timeline-item.right {
+        left: 0;
+        text-align: left;
+      }
+    
+      .timeline-item.left::before,
+      .timeline-item.right::before {
+        left: 0;
+        right: auto;
+      }
+    
+      .timeline-item .content {
+        margin-left: 30px;
+      }
+    }
+    
