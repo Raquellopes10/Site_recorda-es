@@ -6,6 +6,70 @@
     <title>Ruth</title>
 </head>
 <body>
+    <img src="img/93.jpeg" alt="Gessica" />
+    <div class="content">
+        <h1>Minha irmã (a mais cínica que eu conheço)</h1>
+        <p>
+          Ser gêmea dela é viver entre tapas e abraços — às vezes a gente se entende, às vezes nem tanto 😅<br>
+          Mas quando se trata de filmes da  Disney e "Sou Luna", viramos melhores amigas na velocidade de um musical 🎤🎬
+        </p>
+        <p>
+          Ela é a rainha do deboche, do olhar julgador e das respostas atravessadas 🙄💅<br>
+          Mas por trás de toda essa pose, tem um coração enorme (só que ela não admite, claro 🤭).
+        </p>
+        <p>
+          A gente pode brigar por qualquer bobeira, mas no final do dia, ela é minha parceira de vida, de sofá, de maratona da Disney+ e da vida real 💗<br>
+          Ser irmã dela é caos e conforto — tudo junto, do jeitinho que só a gente entende!
+        </p>
+      
+
+      <div class="galeria">
+        <h2>Momentos com Jhennyf 📸</h2>
+        <div class="fotos">
+          <img src="img/8.jpg" alt="Gessica em um momento especial" />
+          <img src="img/86.jpeg" alt="Gessica sorrindo" />
+          <img src="img/88.jpeg" alt="Gessica e amigas" />
+          <img src="img/52.JPG" alt="Gessica e amigas" />
+          <img src="img/57.JPG" alt="Gessica e amigas" />
+          <img src="img/37.jpg" alt="Gessica e amigas" />
+          <img src="img/83.jpeg" alt="Gessica e amigas" />
+          <img src="img/31.jpg" alt="Gessica e amigas" />
+          <img src="img/48.jpg" alt="Gessica e amigas" />
+          <img src="img/85.jpeg" alt="Gessica e amigas" />
+          <img src="img/21.jpg" alt="Gessica e amigas" />
+          <img src="img/55.JPG" alt="Gessica e amigas" />
+          
+          <!-- Vídeo com estilo semelhante às imagens -->
+          <video class="video-galeria" controls>
+            <source src="img/103 (1).mp4" type="video/mp4">
+            <source src="img/104.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+          </video>
+        </div>
+      </div>
     
+  
+      <a href="paginaAmigos.html">← Voltar para a galeria</a>
+    </div>
+
+   
+  
+    <script>
+      // Animação com GSAP
+      gsap.from(".content", {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        ease: "power3.out"
+      });
+  
+      gsap.from("img", {
+        opacity: 0,
+        scale: 0.8,
+        duration: 1.2,
+        delay: 0.3,
+        ease: "power3.out"
+      });
+    </script>
 </body>
 </html>
