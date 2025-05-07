@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 <head>
   <meta charset="UTF-8">
   <title>Modo Dark/Light</title>
-  <link rel="stylesheet" href="css/teste.css">
+   <style>
+  body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+</style>
+
+   </style>
 </head>
 <body>
-  <button id="toggle">Alternar Tema</button>
-  <h1>Olá, Mundo!</h1>
+ <!-- Botão com ícone -->
+<button id="toggle-dark-mode" class="btn btn-outline-secondary">
+  <i id="theme-icon" class="bi bi-brightness-high-fill"></i>
+</button>
 
-  <script src="js/teste.js"></script>
+  </button>
+  
+
+
+   <script>
+  const toggleButton = document.getElementById("toggle-dark-mode");
+  const icon = document.getElementById("theme-icon");
+
+  toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    // Trocar ícone
+    if (document.body.classList.contains("dark-mode")) {
+      icon.classList.remove("bi-sun");
+      icon.classList.add("bi-moon");
+    } else {
+      icon.classList.remove("bi-moon");
+      icon.classList.add("bi-sun");
+    }
+  });
+</script>
+
+
+  </script>
 </body>
 </html>

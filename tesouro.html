@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gessi.css">
+    <title>Tesouro</title>
+</head>
+<body>
+    <img src="img/93.jpeg" alt="Gessica" />
+    <div class="content">
+      <h1>Allef </h1>
+      <p>
+        Tesouro é aquele tipo de figura que não tem como passar despercebido 😎<br>
+        Tá sempre soltando uma piada, ajudando com alguma gambiarra ou inventando moda 🔧😂<br>
+        E quando ele aparece, já sabe: vai ter risada, comida boa e história pra contar!
+      </p>
+      <p>
+        Amigo de infância, da época que a gente nem sabia escrever direito, mas já sabia zoar juntos 🤪<br>
+        Crescemos lado a lado, quebrando brinquedo, rindo de bobagem e vivendo as melhores aventuras de Urutaí!
+      </p>
+      <p>
+        Com o Tesouro, tudo vira festa. Conserta as coisas da galera, cozinha como ninguém e ainda dá conselho (mesmo que ninguém peça) 😂<br>
+        Um amigo que é bagunça, cuidado e parceria num combo só. Não tem outro igual 💙
+      </p>
+      
+
+      <div class="galeria">
+        <h2>Momentos com Jhennyf 📸</h2>
+        <div class="fotos">
+          <img src="img/3.jfif" alt="Gessica em um momento especial" />
+          <img src="img/6.jpg" alt="Gessica sorrindo" />
+          <img src="img/10.jpg" alt="Gessica e amigas" />
+          <img src="img/26.jpg" alt="Gessica e amigas" />
+          <img src="img/44.jpg" alt="Gessica e amigas" />
+          <img src="img/81.jpeg" alt="Gessica e amigas" />
+          <img src="img/58.JPG" alt="Gessica e amigas" />
+          <img src="img/59.JPG" alt="Gessica e amigas" />
+          <img src="img/23.jpg" alt="Gessica e amigas" />
+          <img src="img/19.jpg" alt="Gessica e amigas" />
+          
+          <!-- Vídeo com estilo semelhante às imagens -->
+          <video class="video-galeria" controls>
+            <source src="img/70.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+          </video>
+        </div>
+      </div>
+    
+  
+      <a href="paginaAmigos.html">← Voltar para a galeria</a>
+    </div>
+
+   
+  
+    <script>
+      // Animação com GSAP
+      gsap.from(".content", {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        ease: "power3.out"
+      });
+  
+      gsap.from("img", {
+        opacity: 0,
+        scale: 0.8,
+        duration: 1.2,
+        delay: 0.3,
+        ease: "power3.out"
+      });
+    </script>
+</body>
+</html>
