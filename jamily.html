@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gessi.css">
+    <title>Jamily</title>
+</head>
+<body>
+    <img src="img/96.jpeg" alt="Gessica" />
+    <div class="content">
+        <h1>Jamily</h1>
+        <p>
+            Crescemos juntas, dividindo segredos, risadas e tardes cheias de brincadeiras na casa dela 🏡💫<br>
+            Mesmo quando a vida nos levou para cidades diferentes, a nossa amizade nunca mudou — continua firme como sempre!
+        </p>
+        <p>
+            Jamily é aquela amiga que sempre me ouviu quando eu precisava desabafar, com um coração enorme e conselhos que parecem saídos direto de um dorama 🎭💖<br>
+            Falando nisso, somos dorameiras assumidas! Nada como passar horas falando dos crushes coreanos e das reviravoltas dramáticas que a gente AMA 💬🍜📺
+        </p>
+        <p>
+            Nossa amizade é daquelas que o tempo e a distância não apagam. Porque amiga de verdade é assim: mora no coração, mesmo morando longe 💞
+        </p>
+      
+
+      <div class="galeria">
+        <h2>Momentos com Vanessa 📸</h2>
+        <div class="fotos">
+          <img src="img/21.jpg" alt="Gessica em um momento especial" />
+          <img src="img/41.jpg" alt="Gessica sorrindo" />
+          <img src="img/125.jpg" alt="Gessica sorrindo" />
+          <img src="img/126.jpg" alt="Gessica sorrindo" />
+          <img src="img/127.jpg" alt="Gessica sorrindo" />
+        
+          <!-- Vídeo com estilo semelhante às imagens -->
+          <video class="video-galeria" controls>
+            
+            Seu navegador não suporta o vídeo.
+          </video>
+        </div>
+      </div>
+    
+  
+      <a href="paginaAmigos.html">← Voltar para a galeria</a>
+    </div>
+
+   
+  
+    <script>
+      // Animação com GSAP
+      gsap.from(".content", {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        ease: "power3.out"
+      });
+  
+      gsap.from("img", {
+        opacity: 0,
+        scale: 0.8,
+        duration: 1.2,
+        delay: 0.3,
+        ease: "power3.out"
+      });
+    </script>
+</body>
+</html>
