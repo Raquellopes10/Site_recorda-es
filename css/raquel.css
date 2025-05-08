@@ -17,10 +17,10 @@ p{
 }
 
 img {
-  width: 250px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  margin-bottom: 1.5rem;
+  width: 100%;
+  height: 300px; /* ou 400px, dependendo do layout */
+  object-fit: cover;
+  border-radius: 15px;
 }
 
 .content {

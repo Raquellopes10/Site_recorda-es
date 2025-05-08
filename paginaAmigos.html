@@ -9,30 +9,37 @@
     <title>Document</title>
 
     <style>
-      /* Tema claro por padrão */
-  body {
-      background-color: white;
-      color: black;
-      transition: background 0.3s, color 0.3s;
-    }
-    
-    /* Tema escuro */
-    body.dark-mode {
-      background-color: #0e0f28;
-      color: white;
-    }
-  
-    #toggle{
-      border-radius: 10px;
-      border: 3px solid #0e0f28 ;
-      background-color: white;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 100px;
-    }
+        /* Tema claro por padrão */
+        body {
+            background-color: white;
+            color: black;
+            transition: background 0.3s, color 0.3s;
+        }
 
-    .card-text, .card-title{
-        color: black;
-    }
+        /* Tema escuro */
+        body.dark-mode {
+            background-color: #0e0f28;
+            color: white;
+        }
+
+        #toggle {
+            border-radius: 10px;
+            border: 3px solid #0e0f28;
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 100px;
+        }
+
+        .card-text,
+        .card-title {
+            color: black;
+        }
+
+        .card-body {
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
     </style>
 </head>
 
@@ -41,21 +48,25 @@
     <button id="toggle">Alternar Tema</button>
 
     <div class="nome  text-center">
-        <h1>info</h1>
+        <h1>Aos Bons Amigos da Vida</h1>
         <h4></h4>
-     </div>
+    </div>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card mb-4 bg.transparent" style="width: 18rem;">
-                    <img src="img/61.JPG" class="card-img-top" class=".img-fluid"  style="height: 200px; object-fit: cover;" alt="...">
+                    <img src="img/61.JPG" class="card-img-top" class=".img-fluid"
+                        style="height: 200px; object-fit: cover;" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Gessica</h5>
-                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa jornada .</p>
+                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa
+                            jornada .</p>
                         <div class="d-flex gap-4">
-                            <button onclick="window.location.href='ge.html'" class="btn btn-primary btn-sm">recordações</button>
-                            <button onclick="window.location.href='linhaDoTempo.html'" class="btn btn-secondary btn-sm">Linha do Tempo</button>
+                            <button onclick="window.location.href='ge.html'"
+                                class="btn btn-primary btn-sm">recordações</button>
+                            <button onclick="window.location.href='linhaDoTempo.html'"
+                                class="btn btn-secondary btn-sm">Linha do Tempo</button>
                         </div>
 
                     </div>
@@ -64,22 +75,28 @@
 
             <div class="col-md-4 mb-4">
                 <div class="card mb-4" style="width: 18rem;">
-                    <img src="img/67.JPG" class="card-img-top" class=".img-fluid"  style="height: 200px; object-fit: cover;" alt="...">
+                    <img src="img/67.JPG" class="card-img-top" class=".img-fluid"
+                        style="height: 200px; object-fit: cover;" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Jhennyf</h5>
-                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa jornada .</p>
-                        <button onclick="window.location.href='jhenfis.html'" class="btn btn-primary btn-sm">recordações</button>
-                        <button onclick="window.location.href='linhaDoTempo.html'" class="btn btn-secondary btn-sm">Linha do Tempo</button>
+                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa
+                            jornada .</p>
+                        <button onclick="window.location.href='jhenfis.html'"
+                            class="btn btn-primary btn-sm">recordações</button>
+                        <button onclick="window.location.href='linhaDoTempo.html'"
+                            class="btn btn-secondary btn-sm">Linha do Tempo</button>
 
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card mb-4" style="width: 18rem;">
-                    <img src="img/90.jph.jpg" class="card-img-top" class=".img-fluid"  style="height: 200px; object-fit: cover;" alt="...">
+                    <img src="img/90.jph.jpg" class="card-img-top" class=".img-fluid"
+                        style="height: 200px; object-fit: cover;" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Vanessa</h5>
-                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa jornada .</p>
+                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa
+                            jornada .</p>
                         <a href="#" class="btn btn-primary">Explorar recordações</a>
 
                     </div>
@@ -87,12 +104,16 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card mb-4" style="width: 18rem;">
-                    <img src="img/93.jpeg" class="card-img-top"  class=".img-fluid"  style="height: 200px; object-fit: cover;"alt="...">
+                    <img src="img/93.jpeg" class="card-img-top" class=".img-fluid"
+                        style="height: 200px; object-fit: cover;" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Allef</h5>
-                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa jornada .</p>
-                        <button onclick="window.location.href='tesouro.html'" class="btn btn-primary btn-sm">recordações</button>
-                        <button onclick="window.location.href='linhaDoTempo.html'" class="btn btn-secondary btn-sm">Linha do Tempo</button>
+                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa
+                            jornada .</p>
+                        <button onclick="window.location.href='tesouro.html'"
+                            class="btn btn-primary btn-sm">recordações</button>
+                        <button onclick="window.location.href='linhaDoTempo.html'"
+                            class="btn btn-secondary btn-sm">Linha do Tempo</button>
 
                     </div>
                 </div>
@@ -103,19 +124,24 @@
                     <img src="img/66.JPG" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Ruth</h5>
-                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa jornada .</p>
-                        <button onclick="window.location.href='ruth.html'" class="btn btn-primary btn-sm">recordações</button>
-                        <button onclick="window.location.href='linhaDoTempoVila.html'" class="btn btn-secondary btn-sm">Linha do Tempo</button>
+                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa
+                            jornada .</p>
+                        <button onclick="window.location.href='ruth.html'"
+                            class="btn btn-primary btn-sm">recordações</button>
+                        <button onclick="window.location.href='linhaDoTempoVila.html'"
+                            class="btn btn-secondary btn-sm">Linha do Tempo</button>
 
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card mb-4" style="width: 18rem;">
-                    <img src="img/68.jpg" class="card-img-top" class=".img-fluid"  style="height: 200px; object-fit: cover;" alt="...">
+                    <img src="img/68.jpg" class="card-img-top" class=".img-fluid"
+                        style="height: 200px; object-fit: cover;" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Fernanda</h5>
-                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa jornada .</p>
+                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa
+                            jornada .</p>
                         <a href="#" class="btn btn-primary">Explorar recordações</a>
 
                     </div>
@@ -123,23 +149,30 @@
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card mb-4" style="width: 18rem;">
-                    <img src="img/73.jpg" class="card-img-top" class=".img-fluid"  style="height: 200px; object-fit: cover;" alt="...">
+                    <img src="img/73.jpg" class="card-img-top" class=".img-fluid"
+                        style="height: 200px; object-fit: cover;" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Kaio</h5>
-                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa jornada .</p>
-                        <button onclick="window.location.href='betô.html'" class="btn btn-primary btn-sm">recordações</button>
-                        <button onclick="window.location.href='linhaDoTempo.html'" class="btn btn-secondary btn-sm">Linha do Tempo</button>
+                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa
+                            jornada .</p>
+                        <button onclick="window.location.href='betô.html'"
+                            class="btn btn-primary btn-sm">recordações</button>
+                        <button onclick="window.location.href='linhaDoTempo.html'"
+                            class="btn btn-secondary btn-sm">Linha do Tempo</button>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card mb-4 mr-4" style="width: 18rem;">
-                    <img src="img/95.jpg" class="card-img-top" class=".img-fluid"  style="height: 200px; object-fit: cover;" alt="...">
+                    <img src="img/95.jpg" class="card-img-top" class=".img-fluid"
+                        style="height: 200px; object-fit: cover;" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">João Vitor</h5>
-                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa jornada .</p>
+                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa
+                            jornada .</p>
                         <a href="#" class="btn btn-primary">Explorar recordações</a>
-                        <button onclick="window.location.href='linhaDoTempo.html'" class="btn btn-secondary btn-sm">Linha do Tempo</button>
+                        <button onclick="window.location.href='linhaDoTempo.html'"
+                            class="btn btn-secondary btn-sm">Linha do Tempo</button>
 
                     </div>
                 </div>
@@ -147,12 +180,15 @@
 
             <div class="col-md-4 mb-4">
                 <div class="card mb-4" style="width: 18rem;">
-                    <img src="img/96.jpg" class="card-img-top" class=".img-fluid"  style="height: 200px; object-fit: cover;" alt="...">
+                    <img src="img/96.jpg" class="card-img-top" class=".img-fluid"
+                        style="height: 200px; object-fit: cover;" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Farley</h5>
-                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa jornada .</p>
+                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa
+                            jornada .</p>
                         <a href="#" class="btn btn-primary">Explorar recordações</a>
-                        <button onclick="window.location.href='linhaDoTempo.html'" class="btn btn-secondary btn-sm">Linha do Tempo</button>
+                        <button onclick="window.location.href='linhaDoTempo.html'"
+                            class="btn btn-secondary btn-sm">Linha do Tempo</button>
 
                     </div>
                 </div>
@@ -163,7 +199,8 @@
                     <!-- <img src="..." class="card-img-top" class=".img-fluid"  style="height: 200px; object-fit: cover;" alt="..."> -->
                     <div class="card-body">
                         <h5 class="card-title">Karol</h5>
-                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa jornada .</p>
+                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa
+                            jornada .</p>
                         <a href="ka.html" class="btn btn-primary">Explorar recordações</a>
 
                     </div>
@@ -173,10 +210,12 @@
 
             <div class="col-md-4 mb-4">
                 <div class="card mb-4" style="width: 18rem;">
-                    <img src="img/97.jpg" class="card-img-top" class=".img-fluid"  style="height: 200px; object-fit: cover;" alt="...">
+                    <img src="img/97.jpg" class="card-img-top" class=".img-fluid"
+                        style="height: 200px; object-fit: cover;" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">André</h5>
-                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa jornada .</p>
+                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa
+                            jornada .</p>
                         <a href="#" class="btn btn-primary">Explorar recordações</a>
 
                     </div>
@@ -188,7 +227,8 @@
                     <!-- <img src="..." class="card-img-top" class=".img-fluid"  style="height: 200px; object-fit: cover;" alt="..."> -->
                     <div class="card-body">
                         <h5 class="card-title">Walmir</h5>
-                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa jornada .</p>
+                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa
+                            jornada .</p>
                         <a href="#" class="btn btn-primary">Explorar recordações</a>
 
                     </div>
@@ -197,10 +237,12 @@
 
             <div class="col-md-4 mb-4">
                 <div class="card mb-4" style="width: 18rem;">
-                    <img src="img/92.jpeg" class="card-img-top" class=".img-fluid"  style="height: 200px; object-fit: cover;" alt="...">
+                    <img src="img/92.jpeg" class="card-img-top" class=".img-fluid"
+                        style="height: 200px; object-fit: cover;" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Amanda</h5>
-                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa jornada .</p>
+                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa
+                            jornada .</p>
                         <a href="#" class="btn btn-primary">Explorar recordações</a>
 
                     </div>
@@ -209,12 +251,14 @@
 
             <div class="col-md-4 mb-4">
                 <div class="card mb-4" style="width: 18rem;">
-                    <img src="img/96.jpeg" class="card-img-top" class=".img-fluid"  style="height: 200px; object-fit: cover;" alt="...">
+                    <img src="img/96.jpeg" class="card-img-top" class=".img-fluid"
+                        style="height: 200px; object-fit: cover;" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Jamily</h5>
-                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa jornada .</p>
+                        <p class="card-text">Esse card está cheio de lembranças, carinho e momentos que marcaram essa
+                            jornada .</p>
                         <a href="#" class="btn btn-primary">Explorar recordações</a>
-                        
+
 
                     </div>
                 </div>
