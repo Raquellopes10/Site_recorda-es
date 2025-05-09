@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gessi.css">
+    <title>Nanda</title>
+</head>
+<body>
+    <img src="img/68.jpg" alt="Gessica" />
+    <div class="content">
+        <h1>Minha irmã (a mais cínica que eu conheço)</h1>
+        <p>
+          Nanda é aquela presença tranquila que todo grupo precisa — a mais calma, a mais sensata, e com um jeitinho de falar que acalma até coração ansioso 🌿💭<br>
+          Foi ela quem falou sobre Urutaí e fez acontecer esse encontro lindo que nos trouxe até aqui. E por isso (e por muito mais), somos gratas demais!
+</p>
+        </p>
+        <p>
+        Com seu jeitinho doce e sempre atencioso, ela é um amor de pessoa — daquelas que escuta com o coração e aconselha com sabedoria 💬🩷<br>
+        Ter a Nanda por perto é certeza de paz, carinho e boas decisões (porque quando a Nanda fala, a gente para pra ouvir!).
+        </p>
+        <p>
+            Ela é o elo que nos uniu e que torna nosso grupo ainda mais especial. Amiga assim é presente raro — e nós temos a sorte de ter! 🌸✨
+        </p>
+      
+
+      <div class="galeria">
+        <h2>Momentos com Ruth 📸</h2>
+        <div class="fotos">
+          <img src="img/18.jpg" alt="Gessica em um momento especial" />
+          <img src="img/20.jpg" alt="Gessica sorrindo" />
+          <img src="img/30.jpg" alt="Gessica e amigas" />
+          <img src="img/38.jpg" alt="Gessica e amigas" />
+          <img src="img/44.jpg" alt="Gessica e amigas" />
+          <img src="img/45.jpg" alt="Gessica e amigas" />
+          <img src="img/82.jpeg" alt="Gessica e amigas" />
+          <img src="img/134.jpg" alt="Gessica e amigas" />
+          <img src="img/135.jpg" alt="Gessica e amigas" />
+          <img src="img/81.jpeg" alt="Gessica e amigas" />
+          <img src="img/46.jpg" alt="Gessica e amigas" />
+          <img src="img/86.jpeg" alt="Gessica e amigas" />
+          
+          <!-- Vídeo com estilo semelhante às imagens -->
+          <video class="video-galeria" controls>
+            <source src="img/103 (1).mp4" type="video/mp4">
+            <source src="img/104.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+          </video>
+        </div>
+      </div>
+    
+  
+      <a href="paginaAmigos.html">← Voltar para a galeria</a>
+    </div>
+
+   
+  
+    <script>
+      // Animação com GSAP
+      gsap.from(".content", {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        ease: "power3.out"
+      });
+  
+      gsap.from("img", {
+        opacity: 0,
+        scale: 0.8,
+        duration: 1.2,
+        delay: 0.3,
+        ease: "power3.out"
+      });
+    </script>
+</body>
+</html>
