@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gessi.css">
+    <title>Amanda</title>
+</head>
+<body>
+    <img src="img/92.jpeg" alt="Gessica" />
+    <div class="content">
+        <h1>Amanda</h1>
+        <p>
+          Nossa amizade vem de longa data — desde criança, a Amanda sempre esteve por perto, com aquele jeitinho leal, esperto e pronto pra tudo <br>
+          Ao longo dos anos, ela continuou sendo essa amiga incrível, que pensa em cada detalhe e sempre organiza os melhores rolês (sério, é impossível superar!) 
+        </p>
+        <p>
+          Inteligente, confiável e cheia de energia boa, a Amanda é daquelas pessoas que iluminam o grupo e fazem tudo funcionar com alegria e carinho 
+        </p>
+        <p>
+           Ter uma amiga como ela é ter certeza de boas risadas, bons momentos e uma amizade que vale ouro. Desde a infância até hoje, só gratidão por ter a Amanda na minha vida!
+        </p>
+      
+
+      <div class="galeria">
+        <h2>Momentos com Amanda 📸</h2>
+        <div class="fotos">
+          <img src="img/6.jpg" alt="Gessica em um momento especial" />
+          <img src="img/20.jpg" alt="Gessica sorrindo" />
+          <img src="img/21.jpg" alt="Gessica e amigas" />
+          <img src="img/39.jpg" alt="Gessica e amigas" />
+          <img src="img/41.jpg" alt="Gessica e amigas" />
+          <img src="img/57.JPG" alt="Gessica e amigas" />
+          <img src="img/81.jpeg" alt="Gessica e amigas" />
+          <img src="img/88.jpeg" alt="Gessica e amigas" />
+          <img src="img/108.JPG" alt="Gessica e amigas" />
+          <img src="img/87.jpeg" alt="Gessica e amigas" />
+          <img src="img/85.jpeg" alt="Gessica e amigas" />
+          <img src="img/126.jpg" alt="Gessica e amigas" />
+          <img src="img/136.jpg" alt="Gessica e amigas" />
+          
+          <!-- Vídeo com estilo semelhante às imagens -->
+          <video class="video-galeria" controls>
+            <source src="img/103 (1).mp4" type="video/mp4">
+            <source src="img/104.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+          </video>
+        </div>
+      </div>
+    
+  
+      <a href="paginaAmigos.html">← Voltar para a galeria</a>
+    </div>
+
+   
+  
+    <script>
+      // Animação com GSAP
+      gsap.from(".content", {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        ease: "power3.out"
+      });
+  
+      gsap.from("img", {
+        opacity: 0,
+        scale: 0.8,
+        duration: 1.2,
+        delay: 0.3,
+        ease: "power3.out"
+      });
+    </script>
+</body>
+</html>
