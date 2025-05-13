@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="css/theme.css" />
     <title>Pagina de Amigos</title>
 
     <style>
-      
+        body {
+            color: inherit;
+            background-color: #ffffff;
+        }
+
         .card-text,
         .card-title {
             color: inherit;
         }
 
         .card-body {
-            border-radius: 20px;
+            border-radius: 5px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s ease;
         }
@@ -51,29 +55,39 @@
             color: inherit;
         }
 
-        /*Modo Dark */
-body.dark-theme {
-  background-color: #0e0f28;
-  color: white;
-}
+      
+        /* 🌙 Modo escuro completo */
+        body.dark-theme {
+            background-color: #0e0f28;
+            color: white;
+        }
 
-body.dark-theme a {
-  color: white;
-}
+        body.dark-theme .card-body {
+            background-color: #0e0f28;
+            color: white;
+        }
 
-body.dark-theme a:hover {
-  color: #cccccc;
-}
+        body.dark-theme .card-title,
+        body.dark-theme .card-text {
+            color: white;
+        }
 
-body.dark-theme p {
-  color: white;
-}
+        body.dark-theme .btn-custom {
+            background-color: white;
+            color: #0e0f28;
+        }
+
+        body.dark-theme .btn-custom:hover {
+            background-color: #ffffff33;
+            /* tom translúcido */
+            color: white;
+        }
     </style>
 </head>
 
 <body>
 
-   <div id="theme-toggle-container"></div>
+    <div id="theme-toggle-container"></div>
 
     <br><br> <br> <br>
 
@@ -344,7 +358,7 @@ body.dark-theme p {
                 </div>
             </div>
 
-                 <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4">
                 <div class="card mb-4" style="width: 18rem;">
                     <img src="img/137.jpg" class="card-img-top" class=".img-fluid"
                         style="height: 200px; object-fit: cover;" alt="...">
@@ -364,7 +378,7 @@ body.dark-theme p {
 
 
 
-    <script src="js/theme-toggle.js"></script>
+            <script src="js/theme-toggle.js"></script>
 
 
 
