@@ -86,3 +86,22 @@ body.dark-theme a:hover {
 body.dark-theme p {
   color: white;
 }
+
+/* Ajustes adicionais para o modo escuro */
+body.dark-theme .intro h1,
+body.dark-theme .intro p {
+  color: white;
+}
+
+body.dark-theme .btn {
+  background-color: white;
+  color: #0e0f28;
+  border-color: white;
+}
+
+body.dark-theme .btn:hover {
+  background-color: #ffffff33;
+  color: white;
+  border-color: white;
+}
+
