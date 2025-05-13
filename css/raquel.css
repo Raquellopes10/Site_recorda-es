@@ -23,13 +23,31 @@ img {
   border-radius: 15px;
 }
 
-.content {
-  max-width: 800px;
+.agradecimentos {
+  padding: 60px 20px;
+  background-color: transparent;
+  color: inherit;
+  font-family: 'Helvetica', sans-serif;
 }
 
-.assinatura {
-  text-align: right;
-  margin-top: 2rem;
+.agradecimentos .titulo {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: inherit;
+}
+
+.agradecimentos .mensagem {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: inherit;
+}
+
+.agradecimentos .assinatura {
+  margin-top: 40px;
+  font-size: 1.1rem;
   font-style: italic;
-  color: #777;
+  color: inherit;
 }
