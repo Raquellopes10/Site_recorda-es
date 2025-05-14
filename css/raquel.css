@@ -1,6 +1,6 @@
 body {
-  background-color:#0e0f28;
-  color: white;
+  background-color:white;
+  color: inherit;
   font-family: 'Helvetica', sans-serif;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@ body {
 }
 
 p{
-  color: white;
+  color: inherit;
 }
 
 img {
