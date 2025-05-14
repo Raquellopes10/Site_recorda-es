@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/teste.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -12,53 +13,137 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/raquel.css">
+
+  <!-- <link rel="stylesheet" href="css/raquel.css"> -->
 
   <title>raquel</title>
   <style>
-    body {
-      min-height: 100vh;
-      background-color: #0e0f28;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+
+   .wrapper {
+    align-items: center;
+    display: flex;
+    height: 100lvh;
+    justify-content: center;
+    width: 100%;
+}
+
+.carousel {
+    aspect-ratio: 16/9;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-areas: "stack";
+    max-height: 36rem;
+    max-width: 64rem;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    display: block;
+    grid-area: stack;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    width: 100%;
+}
+
+.slide img {
+    animation: panRight 10s ease-in-out infinite;
+    height: 110%;
+    position: absolute;
+    width: 110%;
+}
+
+@keyframes panUp {
+    0% {
+        transform: translateY(0);
     }
 
-    .carousel {
-      max-width: 60rem;
-      overflow: hidden;
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+@keyframes panDown {
+    0% {
+        transform: translateY(-10%);
     }
 
-    .wrapper {
-      display: flex;
-      animation: roll 10s linear infinite;
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes panRight {
+    0% {
+        transform: translateX(0);
     }
 
-    @keyframes roll {
-      to {
-        transform: translate(calc(-4 * 15rem));
-      }
+    100% {
+        transform: translateX(-10%);
     }
+}
+
+@keyframes panLeft {
+    0% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.agradecimentos {
+  padding: 60px 20px;
+  background-color: transparent;
+  color: inherit;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.agradecimentos .titulo {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: inherit;
+}
+
+.agradecimentos .mensagem {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: inherit;
+}
+
+.agradecimentos .assinatura {
+  margin-top: 40px;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: inherit;
+}
+
+
   </style>
 
 
 </head>
 
 <body>
-  <div class="carousel">
-    <div class="wrapper">
-      <img src="img/20.jpg" alt="Woods">
-      <img src="img/2.jfif" alt="Hills">
-      <img src="img/21.jpg" alt="Beach">
-      <img src="img/138.jpg" alt="Lake">
+  
 
-      <!-- Duplicates -->
-      <img src="img/125.jpg" alt="" aria-hidden="true">
-      <img src="img/101.jpg" alt="" aria-hidden="true">
-      <img src="img/48.jpg" alt="" aria-hidden="true">
-      <img src="img/13.jpg" alt="" aria-hidden="true">
+ <div class="wrapper">
+    <div id="carousel" class="carousel">
+        <div class="slide"><img src="img/2.jfif" alt="less-rain-dummy-01"></div>
+        <div class="slide"><img src="img/24.jpg" alt="less-rain-dummy-02"></div>
+        <div class="slide"><img src="img/21.jpg" alt="less-rain-dummy-03"></div>
+      <div class="slide"><img src="img/130.jpg" alt="less-rain-dummy-04"></div>
+      <div class="slide"><img src="img/101.jpg" alt="less-rain-dummy-05"></div>
+      <div class="slide"><img src="img/77.jpeg" alt="less-rain-dummy-06"></div>
+        <!-- Add as many slides as you need -->
     </div>
-  </div>
+</div>
 
   <section class="agradecimentos text-center">
     <div class="container">
