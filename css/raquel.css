@@ -51,3 +51,20 @@ img {
   font-style: italic;
   color: inherit;
 }
+
+.carousel {
+  max-width: 60rem;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  animation: roll 10s linear infinite;
+}
+
+@keyframes roll {
+  to {
+    transform: translate(calc(-4 * 15rem));
+  }
+}
+
