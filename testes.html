@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid com Fotos</title>
+  <style>
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #171414;
+}
+
+.image-grid {
+  padding: 12px;
+}
+
+.image-row {
+  display: flex;  
+}
+
+.image-row .image {
+  margin: 12px;
+  height: 240px;  
+}
+
+.image { 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 
+              0 6px 20px rgba(0, 0, 0, 0.15),
+              0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.image-01 {
+  background-image: url('/img/1.jpg'); 
+  flex: 1;  
+}
+
+.image-02 {
+  background-image: url('/img/148.jpg'); 
+  flex: 1;  
+}
+
+.image-03 {
+  background-image: url('/img/88.jpeg');  
+  flex: 2;  
+}
+
+.image-04 {
+  background-image: url('/img/145.jpg'); 
+  flex: 1;
+}
+
+.image-05 {
+  background-image: url('/img/26.jpg');
+  flex: 2;
+}
+
+.image-06 {
+  background-image: url('https://images.unsplash.com/photo-1604927737867-9f413dac3d08?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDYwfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');  
+  flex: 2;
+}
+
+.image-07 {
+  background-image: url('https://images.unsplash.com/photo-1614191663579-8780442c043b?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDk3fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'); 
+  flex: 1;
+}
+
+.image-08 {
+  background-image: url('https://images.unsplash.com/photo-1605812466869-dab071e96c35?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExNnw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=60');  
+  flex: 3;
+}
+
+.image-09 {
+  background-image: url(' https://images.unsplash.com/photo-1617292801457-b108c1672a3d?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExMnw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');  
+  flex: 1;
+}
+
+.image-10 {
+  background-image: url('https://images.unsplash.com/photo-1616724319135-2370dbb4424c?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2Nnw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'); 
+  flex: 1;
+}
+
+.image-11 {
+  background-image: url('https://images.unsplash.com/photo-1616418672515-1c2b39e219d3?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE5N3w2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'); 
+  flex: 1;
+}
+
+.image-12 {
+  background-image: url('https://images.unsplash.com/photo-1548164806-9709e698bfc8?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIzOHw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'); 
+  flex: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .image-row {
+    flex-direction: column;
+  }
+  
+  .image-row .image {
+    flex-basis: auto;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="background-grid">
+   <div class="image-grid">
+  <div class="image-row">
+    <div class="image image-01"></div>  
+    <div class="image image-02"></div>  
+    <div class="image image-03"></div>  
+  </div> 
+  <div class="image-row">
+    <div class="image image-04"></div>  
+    <div class="image image-05"></div>  
+  </div>  
+  <div class="image-row">
+    <div class="image image-06"></div>  
+    <div class="image image-07"></div>  
+    <div class="image image-08"></div>  
+    <div class="image image-09"></div>  
+  </div>  
+  <div class="image-row">
+    <div class="image image-10"></div>  
+    <div class="image image-11"></div>  
+    <div class="image image-12"></div>  
+  </div> 
+</div>  
+</body>
+</html>
