@@ -6,135 +6,143 @@
   <title>Recados</title>
 
   <style>
-    .mensagem-section {
-  background-color: #fef9f3;
-  padding: 40px 20px;
-  font-family: 'Arial', sans-serif;
-}
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000427;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      height: 100vh;
+    }
 
-.titulo {
-  font-size: 2rem;
-  color: #000427;
-  margin-bottom: 20px;
-}
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
 
-.form-mensagem {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  margin: 0 auto 40px auto;
-  gap: 15px;
-}
+    .grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      height: 100%;
+      z-index: 0;
+    }
 
-.form-mensagem input,
-.form-mensagem textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-  resize: none;
-}
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0;
+    }
 
-.form-mensagem button {
-  background-color: #000427;
-  color: #fff;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+    .column img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-.form-mensagem button:hover {
-  background-color: #333b7a;
-}
+    @media (max-width: 768px) {
+      .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
 
-.mensagens-recebidas {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: left;
-}
+    @media (max-width: 480px) {
+      .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
 
-.mensagens-recebidas h3 {
-  color: #000427;
-  margin-bottom: 15px;
-}
+    form {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(1, 8, 67, 0.9); /* cor com transparência */
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 90%;
+      max-width: 500px;
+      z-index: 1;
+    }
 
-.mensagem-item {
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-left: 5px solid #000427;
-  border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 15px;
-}
+    input,
+    textarea,
+    button {
+      font-size: 16px;
+      padding: 12px 16px;
+      border: none;
+      border-radius: 12px;
+      outline: none;
+      font-family: inherit;
+      transition: all 0.3s ease;
+    }
 
-.mensagem-item strong {
-  color: #000427;
-  font-weight: bold;
-}
+    input,
+    textarea {
+      background-color: #ffffff;
+      color: #000;
+    }
 
-.mensagem-item p {
-  margin-top: 5px;
-  color: #333;
-}
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      background-color: #ffffff;
+      color: #000427;
+      font-weight: bold;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    button:hover {
+      background-color: #ccc;
+      transform: scale(1.02);
+    }
 
   </style>
 </head>
 <body>
-<section class="mensagem-section text-center">
   <div class="container">
-    <h2 class="titulo">Deixe sua Mensagem 💌</h2>
-    <form id="formMensagem" class="form-mensagem">
-      <input type="text" id="nome" placeholder="Seu nome" required />
-      <textarea id="mensagem" placeholder="Escreva sua mensagem aqui..." rows="5" required></textarea>
+    <form action="https://formspree.io/f/mpwdkroa" method="POST" class="form-mensagem">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <textarea name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
       <button type="submit">Enviar mensagem</button>
     </form>
 
-    <div class="mensagens-recebidas">
-      <h3>Mensagens Recebidas 💬</h3>
-      <div id="listaMensagens"></div>
+    <div class="grid-container">
+      <div class="column">
+        <img src="https://images.pexels.com/photos/2106037/pexels-photo-2106037.jpeg">
+        <img src="https://images.pexels.com/photos/1083822/pexels-photo-1083822.jpeg">
+        <img src="https://images.pexels.com/photos/772571/pexels-photo-772571.jpeg">
+      </div>
+      <div class="column">
+        <img src="https://images.pexels.com/photos/3629537/pexels-photo-3629537.jpeg">
+        <img src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg">
+        <img src="https://images.pexels.com/photos/3673762/pexels-photo-3673762.jpeg">
+        <img src="https://images.pexels.com/photos/3338497/pexels-photo-3338497.jpeg">
+      </div>
+      <div class="column">
+        <img src="https://images.pexels.com/photos/4000421/pexels-photo-4000421.jpeg">
+        <img src="https://images.pexels.com/photos/4230630/pexels-photo-4230630.jpeg">
+        <img src="https://images.pexels.com/photos/4197439/pexels-photo-4197439.jpeg">
+      </div>
+      <div class="column">
+        <img src="https://images.pexels.com/photos/2248516/pexels-photo-2248516.jpeg">
+        <img src="https://images.pexels.com/photos/4555468/pexels-photo-4555468.jpeg">
+        <img src="https://images.pexels.com/photos/2899100/pexels-photo-2899100.jpeg">
+        <img src="https://images.pexels.com/photos/3726314/pexels-photo-3726314.jpeg">
+      </div>
     </div>
   </div>
-</section>
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("formMensagem");
-    const lista = document.getElementById("listaMensagens");
-
-    // Carrega mensagens salvas
-    const mensagens = JSON.parse(localStorage.getItem("mensagens")) || [];
-
-    function renderMensagens() {
-      lista.innerHTML = "";
-      mensagens.forEach(({ nome, texto }) => {
-        const div = document.createElement("div");
-        div.classList.add("mensagem-item");
-        div.innerHTML = `<strong>${nome}:</strong><p>${texto}</p>`;
-        lista.appendChild(div);
-      });
-    }
-
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const nome = document.getElementById("nome").value.trim();
-      const texto = document.getElementById("mensagem").value.trim();
-
-      if (nome && texto) {
-        mensagens.unshift({ nome, texto }); // adiciona no topo
-        localStorage.setItem("mensagens", JSON.stringify(mensagens));
-        renderMensagens();
-        form.reset();
-      }
-    });
-
-    renderMensagens();
-  });
-</script>
-
-
 </body>
 </html>
