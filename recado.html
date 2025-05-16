@@ -4,16 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recados</title>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
   <style>
-    body {
+      body {
       margin: 0;
       padding: 0;
-      background-image: url(/img/121\,.png);
+      background-color: #ffffff;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
       height: 100vh;
     }
+
+    .container {
+  background-image: url('img');
+  background-size: cover;
+  background-position: center;
+  filter: blur(0);
+}
+
 
     .container {
       position: relative;
@@ -61,7 +70,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: rgba(1, 8, 67, 0.9); /* cor com transparência */
+      background-color: rgba(1, 8, 67, 0.9);
       padding: 40px;
       border-radius: 16px;
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
@@ -71,6 +80,11 @@
       width: 90%;
       max-width: 500px;
       z-index: 1;
+      transition: transform 0.3s ease;
+    }
+
+    form:hover {
+      transform: translate(-50%, -50%) scale(1.02);
     }
 
     input,
@@ -108,7 +122,6 @@
       background-color: #ccc;
       transform: scale(1.02);
     }
-
   </style>
 </head>
 <body>
@@ -118,8 +131,16 @@
       <textarea name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
       <button type="submit">Enviar mensagem</button>
     </form>
-
-  
   </div>
+
+  <!-- Animação com GSAP -->
+  <script>
+    gsap.from(".form-mensagem", {
+      opacity: 0,
+      y: 50,
+      duration: 1.2,
+      ease: "power3.out"
+    });
+  </script>
 </body>
 </html>
