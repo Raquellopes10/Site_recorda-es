@@ -6,6 +6,75 @@
     <title>Felipe</title>
 </head>
 <body>
+       <div id="theme-toggle-container"></div>
+    <img src="img/68.jpg" alt="Gessica" />
+    <div class="content">
+        <h1>Filipe</h1>
+<p>
+  Filipe é aquele amigo que transforma qualquer momento difícil em uma oportunidade de acolhimento e alegria — sempre presente, sempre disposto a ajudar, e com um senso de humor que arranca risadas mesmo nos dias mais complicados. <br>
+  Nos conhecemos na faculdade e, desde então, ele se tornou um apoio fundamental, especialmente naqueles períodos em que enfrentei repetidas crises de ansiedade.
+</p>
+<p>
+  Com seu jeito leve, atencioso e amigo, ele sempre soube exatamente como me apoiar e me fazer sorrir quando eu mais precisava. <br>
+  Ter o Filipe por perto é certeza de boas conversas, gargalhadas sinceras e aquele sentimento bom de saber que não estamos sozinhos.
+</p>
+<p>
+  Nossa amizade foi construída com afeto, parceria e cumplicidade — e eu amo demais tudo que criamos juntos. <br>
+  Sou imensamente grato(a) e feliz por ter o Filipe na minha vida: amigo assim é presente raro e valioso!
+</p>
+
+      
+
+      <div class="galeria">
+        <h2>Momentos com Nanda 📸</h2>
+        <div class="fotos">
+          <img src="img/18.jpg" alt="Gessica em um momento especial" />
+          <img src="img/20.jpg" alt="Gessica sorrindo" />
+          <img src="img/30.jpg" alt="Gessica e amigas" />
+          <img src="img/38.jpg" alt="Gessica e amigas" />
+          <img src="img/44.jpg" alt="Gessica e amigas" />
+          <img src="img/45.jpg" alt="Gessica e amigas" />
+          <img src="img/82.jpeg" alt="Gessica e amigas" />
+          <img src="img/134.jpg" alt="Gessica e amigas" />
+          <img src="img/135.jpg" alt="Gessica e amigas" />
+          <img src="img/81.jpeg" alt="Gessica e amigas" />
+          <img src="img/46.jpg" alt="Gessica e amigas" />
+          <img src="img/86.jpeg" alt="Gessica e amigas" />
+          
+          <!-- Vídeo com estilo semelhante às imagens -->
+          <video class="video-galeria" controls>
+            <source src="img/103 (1).mp4" type="video/mp4">
+            <source src="img/104.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo.
+          </video>
+        </div>
+      </div>
     
+  
+      <a href="paginaAmigos.html">← Voltar para a galeria</a>
+    </div>
+
+   
+  
+    <script>
+      // Animação com GSAP
+      gsap.from(".content", {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        ease: "power3.out"
+      });
+  
+      gsap.from("img", {
+        opacity: 0,
+        scale: 0.8,
+        duration: 1.2,
+        delay: 0.3,
+        ease: "power3.out"
+      });
+    </script>
+
+             <script src="js/theme-toggle.js"></script>
+
 </body>
 </html>
