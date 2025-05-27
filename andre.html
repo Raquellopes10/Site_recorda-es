@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="theme-toggle-container"></div>
+    <img src="img/97.jpg" alt="Gessica" />
+    <div class="content">
+
+        <h1>André</h1>
+        <p>
+            André é aquele tipo de amigo que a gente agradece por ter cruzado o nosso caminho — gentil, engraçado e com
+            um coração enorme. <br>
+            Foi na faculdade que nos conhecemos, e desde então ele se tornou presença constante, sempre somando com seu
+            jeito leve e sua disposição em compartilhar os bons (e até os desafiadores) momentos da jornada.
+        </p>
+        <p>
+            Parceiro de verdade, o André está sempre pronto para tudo o que o grupo propõe — seja uma saída rápida, uma
+            viagem de última hora ou até encarar uma ida à academia (mesmo que meio duvidosa no início 😄). <br>
+            Ter alguém assim por perto faz toda a diferença: ele transforma o simples em memorável.
+        </p>
+        <p>
+            Nossa amizade é feita de risadas, parceria e muitas histórias que levaremos pra vida. <br>
+            Sou grato(a) por cada momento ao lado do André — um amigo que topa tudo, apoia, diverte e faz com que a vida
+            ao lado dele seja mais leve e divertida!
+        </p>
+
+    <div class="galeria">
+        <h2>Momentos com Nanda 📸</h2>
+        <div class="fotos">
+          <img src="img/1.jpg" alt="Gessica em um momento especial" />
+          <img src="img/72.jpg" alt="Gessica sorrindo" />
+          <img src="img/75.jpg" alt="Gessica e amigas" />
+          <img src="img/77.jpeg" alt="Gessica e amigas" />
+          <img src="img/97.jpg" alt="Gessica e amigas" />
+         
+          <!-- Vídeo com estilo semelhante às imagens -->
+         
+        </div>
+      </div>
+    
+  
+      <a href="paginaAmigos.html">← Voltar para a galeria</a>
+    </div>
+
+   
+  
+    <script>
+      // Animação com GSAP
+      gsap.from(".content", {
+        opacity: 0,
+        y: 50,
+        duration: 1.5,
+        ease: "power3.out"
+      });
+  
+      gsap.from("img", {
+        opacity: 0,
+        scale: 0.8,
+        duration: 1.2,
+        delay: 0.3,
+        ease: "power3.out"
+      });
+    </script>
+
+             <script src="js/theme-toggle.js"></script>
+</body>
+
+</html>
