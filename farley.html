@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gessi.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <title>andre
+    </title>
+</head>
+
+<body>
+
+    <div id="theme-toggle-container"></div>
+    <img src="img/97.jpg" alt="Gessica" />
+    <div class="content">
+
+        <h1>Farley</h1>
+        <p>
+            Farley é aquele amigo tranquilo, de fala calma e presença acolhedora, que transmite paz até nos dias mais
+            corridos da faculdade. <br>
+            Ele é o tipo de pessoa que está sempre disposto a ajudar, com paciência e generosidade — e isso fez (e faz!)
+            toda a diferença em nossa caminhada.
+        </p>
+        <p>
+            Foram muitas as vezes em que eu e Géssica precisávamos de ajuda com alguma matéria, e lá estava o Farley,
+            pronto para socorrer, explicar com calma e garantir que a gente entendesse tudo direitinho. <br>
+            Seu apoio constante nos momentos difíceis nos mostrou o verdadeiro valor de uma amizade solidária e
+            generosa.
+        </p>
+        <p>
+            Ter o Farley por perto é saber que nunca estamos sozinhos. Sua amizade é leve, verdadeira e repleta de
+            companheirismo. <br>
+            Sou muito grata(o) por ter vivido tantos momentos ao lado dele — um amigo que ensina, acolhe e faz a vida
+            ser mais simples e bonita.
+        </p>
+
+
+        <div class="galeria">
+            <h2>Momentos com Nanda 📸</h2>
+            <div class="fotos">
+                <img src="img/1.jpg" alt="Gessica em um momento especial" />
+                <img src="img/72.jpg" alt="Gessica sorrindo" />
+                <img src="img/75.jpg" alt="Gessica e amigas" />
+                <img src="img/77.jpeg" alt="Gessica e amigas" />
+                <img src="img/97.jpg" alt="Gessica e amigas" />
+
+                <!-- Vídeo com estilo semelhante às imagens -->
+
+            </div>
+        </div>
+
+
+        <a href="paginaAmigos.html">← Voltar para a galeria</a>
+    </div>
+
+
+
+    <script>
+        // Animação com GSAP
+        gsap.from(".content", {
+            opacity: 0,
+            y: 50,
+            duration: 1.5,
+            ease: "power3.out"
+        });
+
+        gsap.from("img", {
+            opacity: 0,
+            scale: 0.8,
+            duration: 1.2,
+            delay: 0.3,
+            ease: "power3.out"
+        });
+    </script>
+
+    <script src="js/theme-toggle.js"></script>
+</body>
+
+</html>
