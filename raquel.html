@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
   <script src="js/teste.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -14,20 +18,55 @@
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="css/raquel.css">
+
   <link rel="stylesheet" href="css/theme.css">
 
   <title>raquel</title>
 
+  <style>
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      background: #000427; /* Fundo escuro para destacar as partículas */
+    }
 
+    .agradecimentos {
+      position: relative;
+      z-index: 1;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+
+    .mensagem {
+      background-color: white;
+      padding: 30px;
+      color: #1a1a1a;
+      transition: background-color 0.5s ease, color 0.5s ease;
+      border-radius: 10px;
+    }
+
+    body.dark-theme .mensagem{
+      background-color: #000427;
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
 
+
  <div id="theme-toggle-container"></div>
+ 
+  <div id="particles-js"></div>
+
+  <div id="theme-toggle-container"></div>
   <section class="agradecimentos text-center">
     <div class="container">
-      <h2 class="titulo">Agradecimentos</h2>
+      
       <p class="mensagem">
         Aos meus amigos da faculdade, vocês não apenas me acompanharam nas aulas e nas provas, mas foram a razão de eu
         enfrentar os desafios com um sorriso no rosto. Cada dia vivido ao lado de vocês foi uma mistura de aprendizado,
@@ -67,14 +106,68 @@
         <em>Com todo meu carinho,</em><br>
         <strong>Raquel</strong>
       </p>
-
-
-      </p>
-
-
+        
     </div>
   </section>
-   <script src="js/theme-toggle.js"></script>
+
+  <script src="js/theme-toggle.js"></script>
+
+  <!-- Configuração das partículas -->
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": { "enable": true, "value_area": 800 }
+        },
+        "color": { "value": "#000000" },
+        "shape": {
+          "type": "circle",
+          "stroke": { "width": 0, "color": "#000000" },
+          "polygon": { "nb_sides": 5 }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": { "enable": false }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": { "enable": false }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" },
+          "resize": true
+        },
+        "modes": {
+          "repulse": { "distance": 100, "duration": 0.4 },
+          "push": { "particles_nb": 4 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
 </body>
 
 </html>
