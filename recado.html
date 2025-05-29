@@ -5,22 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recados</title>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
 
   <style>
   /* Camada borrada */
-.background-blur {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('/img/121\,.png'); /* Substitua aqui */
-  background-size: cover;
-  background-position: center;
-  filter: blur(10px);
-  opacity: 0.9;
-  z-index: -1;
-}
+ body.dark-theme .mensagem{
+      background-color: #000427;
+      color: white;
+    }
+
+     #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      background: #000427; /* Fundo escuro para destacar as partículas */
+    }
+
 
 /* Garante que o conteúdo fique acima */
 .container {
@@ -85,6 +89,8 @@ button:hover {
 </head>
 <body>
 
+    <div id="particles-js"></div>
+
   <div class="background-blur"></div>
   <div class="container">
     <form action="https://formspree.io/f/mpwdkroa" method="POST" class="form-mensagem">
@@ -101,6 +107,63 @@ button:hover {
       y: 50,
       duration: 1.2,
       ease: "power3.out"
+    });
+  </script>
+
+   <!-- Configuração das partículas -->
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": { "enable": true, "value_area": 800 }
+        },
+        "color": { "value": "#000000" },
+        "shape": {
+          "type": "circle",
+          "stroke": { "width": 0, "color": "#000000" },
+          "polygon": { "nb_sides": 5 }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": { "enable": false }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": { "enable": false }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" },
+          "resize": true
+        },
+        "modes": {
+          "repulse": { "distance": 100, "duration": 0.4 },
+          "push": { "particles_nb": 4 }
+        }
+      },
+      "retina_detect": true
     });
   </script>
 </body>
