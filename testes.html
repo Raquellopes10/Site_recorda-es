@@ -1,53 +1,268 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vídeo de Fundo</title>
+  <title>Vídeo Repetido</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body, html {
-      height: 100%;
-      font-family: Arial, sans-serif;
-    }
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
-    .video-bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      z-index: -1; /* para o vídeo ficar atrás do conteúdo */
-    }
+.video-pattern-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 
-    .content {
-      position: relative;
-      z-index: 1;
-      color: white;
-      text-align: center;
-      top: 40%;
-      transform: translateY(-50%);
-    }
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 150px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.video-grid video {
+   width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+p{
+  color: black;
+   font-family: Poppies;
+   font-weight: bolder;
+}
+
   </style>
 </head>
 <body>
 
-  <!-- Vídeo como background -->
-  <video autoplay muted loop class="video-bg">
-    <source src="img/video_site.mp4" type="video/mp4" />
-    Seu navegador não suporta vídeo em HTML5.
-  </video>
+  <div class="video-pattern-container">
+    <!-- Vários vídeos menores para criar o padrão -->
+    <div class="video-grid">
+      <!-- Você pode repetir esse <video> quantas vezes quiser -->
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+      <video autoplay muted loop playsinline>
+        <source src="img/video_site.mp4" type="video/mp4" />
+      </video>
+   
+      <!-- Adicione mais blocos conforme o tamanho da tela -->
+    </div>
 
-  <!-- Conteúdo sobre o vídeo -->
-  <div class="content">
-    <h1>Bem-vindo!</h1>
-    <p>Este é um exemplo com vídeo de fundo.</p>
+    <div class="content-overlay">
+      <p>  Aos meus amigos da faculdade, vocês não apenas me acompanharam nas aulas e nas provas, mas foram a razão de eu
+        enfrentar os desafios com um sorriso no rosto. Cada dia vivido ao lado de vocês foi uma mistura de aprendizado,
+        risadas e muito companheirismo. Não importa o quão difícil fosse a matéria ou o quanto as noites de estudos se
+        alongassem, sempre havia tempo para uma piada, uma conversa descontraída ou até mesmo um desabafo que aliviava a
+        carga de pressão. Esses momentos, que surgiam entre os trabalhos em grupo, as discussões sobre projetos e os
+        cafés compartilhados, formaram uma rede de apoio que fez toda a diferença na minha jornada. Eu nunca teria
+        conseguido atravessar essa fase da minha vida sem vocês ao meu lado. Obrigada por me fazerem sentir que, mesmo
+        nas dificuldades, sempre havia um sorriso para me dar forças para seguir em frente. São memórias que eu vou
+        levar comigo para o resto da minha vida, e eu sou eternamente grata por cada uma delas.<br><br>
+
+        Aos meus amigos de infância, vocês foram os primeiros a me ensinar o que é amizade de verdade. Com vocês,
+        aprendi a importância da lealdade, da confiança e do carinho genuíno. Crescemos juntos, passamos por tantas
+        coisas, e mesmo com o tempo e a distância, nossa amizade sempre foi uma constante. Foram tantas tardes de
+        brincadeiras, conversas até tarde da noite, confidências e momentos de pura diversão. O que eu vivi ao lado de
+        cada um de vocês foi fundamental para me tornar quem sou hoje. Mesmo quando os caminhos da vida nos afastaram
+        fisicamente, a conexão que criamos jamais se quebrou. Eu sempre pude contar com vocês, e esse apoio imensurável
+        é um dos maiores presentes que a vida me deu. Eu sei que, independentemente da distância, nosso vínculo sempre
+        permanecerá forte. E, por tudo o que vivemos, meu coração sempre será grato a cada um de vocês.<br><br>
+
+        Este site, embora simples, é uma maneira de tentar expressar um pouco da gratidão que sinto. Ele é uma forma de
+        registrar e eternizar todas as boas memórias que construímos juntos, todos os momentos especiais que formaram a
+        base do que sou hoje. **Vocês são extremamente importantes para mim**, e tudo o que vivemos juntos estará sempre
+        guardado com muito carinho. Agora, com este pequeno gesto, quero deixar claro o quanto cada um de vocês fez (e
+        continua fazendo) a diferença na minha vida. Não importa onde a vida nos leve, o que importa é que sempre
+        teremos essas lembranças preciosas para nos lembrar de nossa amizade e do impacto que causamos uns nos
+        outros.<br><br>
+
+        Por isso, com muito amor e gratidão, deixo aqui meus mais sinceros agradecimentos a cada um de vocês. E, claro,
+        o meu carinho imenso fica registrado para sempre em meu coração. Que possamos continuar a compartilhar nossa
+        jornada, nossas vitórias e, até mesmo, nossas dificuldades, sempre com a certeza de que temos uns aos outros, em
+        qualquer momento da vida.<br><br>
+            
+       <em>A amizade é uma alma compartilhada entre diferentes corações.</em>
+
+         <br><br>
+        <em>Com todo meu carinho,</em><br>
+        <strong>Raquel</strong><p>
+    </div>
   </div>
 
 </body>

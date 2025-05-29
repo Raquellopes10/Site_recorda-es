@@ -24,6 +24,31 @@
   <title>raquel</title>
 
   <style>
+    .btn-assista-video {
+  background: linear-gradient(45deg, #ffff, #000427);
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-assista-video:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  background: linear-gradient(45deg, #7873f5, #ff6ec4);
+}
+
+.btn-assista-video:focus {
+  outline: none;
+}
+
     #particles-js {
       position: fixed;
       width: 100%;
@@ -55,7 +80,18 @@
     }
   </style>
 </head>
+<script>
+  $(document).ready(function(){
+    $('#abrir-video').click(function(){
+      $('#modalVideo').modal('show');
+    });
 
+    // Pausar o vídeo ao fechar o modal
+    $('#modalVideo').on('hidden.bs.modal', function () {
+      $("#meuVideo").get(0).pause();
+    });
+  });
+</script>
 <body>
 
 
@@ -109,6 +145,29 @@
         
     </div>
   </section>
+
+ <button id="abrir-video" class="btn-assista-video">🎥 Assista ao vídeo</button>
+
+
+   <!-- Modal -->
+<div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="modalVideoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalVideoLabel">Meu vídeo</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <video id="meuVideo" controls style="width: 100%; border-radius: 10px;">
+          <source src="img/video_site.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
 
   <script src="js/theme-toggle.js"></script>
 
