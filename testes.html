@@ -1,254 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-     <link rel="stylesheet" href="css/theme.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vídeo de Fundo</title>
   <style>
-    .wrapper {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      padding: 2rem 0;
-      /* Adiciona um espaçamento controlado */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-
-
-    .carousel {
-      aspect-ratio: 16/9;
-      border-radius: 1rem;
-      display: grid;
-      grid-template-areas: "stack";
-      max-height: 36rem;
-      max-width: 64rem;
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-      margin-bottom: 1rem;
-    }
-
-    .slide {
-      display: block;
-      grid-area: stack;
+    body, html {
       height: 100%;
-      opacity: 0;
-      transition: opacity 2s ease-in-out;
+      font-family: Arial, sans-serif;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
       width: 100%;
+      object-fit: cover;
+      z-index: -1; /* para o vídeo ficar atrás do conteúdo */
     }
 
-    .slide img {
-      animation: panRight 10s ease-in-out infinite;
-      height: 110%;
-      position: absolute;
-      width: 110%;
-    }
-
-    @keyframes panUp {
-      0% {
-        transform: translateY(0);
-      }
-
-      100% {
-        transform: translateY(-10%);
-      }
-    }
-
-    @keyframes panDown {
-      0% {
-        transform: translateY(-10%);
-      }
-
-      100% {
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes panRight {
-      0% {
-        transform: translateX(0);
-      }
-
-      100% {
-        transform: translateX(-10%);
-      }
-    }
-
-    @keyframes panLeft {
-      0% {
-        transform: translateX(-10%);
-      }
-
-      100% {
-        transform: translateX(0);
-      }
-    }
-
-    .agradecimentos {
-      padding: 30px 20px;
-      /* ou ajuste conforme preferir */
-      background-color: transparent;
-      color: inherit;
-      font-family: 'Helvetica', sans-serif;
-    }
-
-    .agradecimentos {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 1.5s ease-out forwards;
-  animation-delay: 0.5s;
-}
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-
-    .agradecimentos .titulo {
-      font-size: 2.8rem;
-      font-weight: 700;
-      margin-bottom: 30px;
-      color: inherit;
-    }
-
-    .agradecimentos .mensagem {
-      max-width: 900px;
-      margin: 0 auto;
-      font-size: 1.2rem;
-      line-height: 1.8;
-      color: inherit;
-    }
-
-    .agradecimentos .assinatura {
-      margin-top: 40px;
-      font-size: 1.1rem;
-      font-style: italic;
-      color: inherit;
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      top: 40%;
+      transform: translateY(-50%);
     }
   </style>
 </head>
-
 <body>
 
-   <div id="theme-toggle-container"></div>
-  <div class="wrapper">
-    <div id="carousel" class="carousel">
-      <div class="slide"><img src="img/113.JPG" alt="less-rain-dummy-01"></div>
-      <div class="slide"><img src="img/86.jpeg" alt="less-rain-dummy-02"></div>
-      <div class="slide"><img src="img/57.JPG" alt="less-rain-dummy-03"></div>
-      <div class="slide"><img src="img/56.JPG" alt="less-rain-dummy-04"></div>
-      <div class="slide"><img src="img/41.jpg" alt="less-rain-dummy-05"></div>
-      <div class="slide"><img src="img/41.jpg" alt="less-rain-dummy-06"></div>
-      <!-- Add as many slides as you need -->
-    </div>
+  <!-- Vídeo como background -->
+  <video autoplay muted loop class="video-bg">
+    <source src="img/video_site.mp4" type="video/mp4" />
+    Seu navegador não suporta vídeo em HTML5.
+  </video>
+
+  <!-- Conteúdo sobre o vídeo -->
+  <div class="content">
+    <h1>Bem-vindo!</h1>
+    <p>Este é um exemplo com vídeo de fundo.</p>
   </div>
 
-  <section class="agradecimentos text-center">
-    <div class="container">
-      <h2 class="titulo"></h2>
-      <p class="mensagem">
-        Aos meus amigos da faculdade, vocês não apenas me acompanharam nas aulas e nas provas, mas foram a razão de eu
-        enfrentar os desafios com um sorriso no rosto. Cada dia vivido ao lado de vocês foi uma mistura de aprendizado,
-        risadas e muito companheirismo. Não importa o quão difícil fosse a matéria ou o quanto as noites de estudos se
-        alongassem, sempre havia tempo para uma piada, uma conversa descontraída ou até mesmo um desabafo que aliviava a
-        carga de pressão. Esses momentos, que surgiam entre os trabalhos em grupo, as discussões sobre projetos e os
-        cafés compartilhados, formaram uma rede de apoio que fez toda a diferença na minha jornada. Eu nunca teria
-        conseguido atravessar essa fase da minha vida sem vocês ao meu lado. Obrigada por me fazerem sentir que, mesmo
-        nas dificuldades, sempre havia um sorriso para me dar forças para seguir em frente. São memórias que eu vou
-        levar comigo para o resto da minha vida, e eu sou eternamente grata por cada uma delas.<br><br>
-
-        Aos meus amigos de infância, vocês foram os primeiros a me ensinar o que é amizade de verdade. Com vocês,
-        aprendi a importância da lealdade, da confiança e do carinho genuíno. Crescemos juntos, passamos por tantas
-        coisas, e mesmo com o tempo e a distância, nossa amizade sempre foi uma constante. Foram tantas tardes de
-        brincadeiras, conversas até tarde da noite, confidências e momentos de pura diversão. O que eu vivi ao lado de
-        cada um de vocês foi fundamental para me tornar quem sou hoje. Mesmo quando os caminhos da vida nos afastaram
-        fisicamente, a conexão que criamos jamais se quebrou. Eu sempre pude contar com vocês, e esse apoio imensurável
-        é um dos maiores presentes que a vida me deu. Eu sei que, independentemente da distância, nosso vínculo sempre
-        permanecerá forte. E, por tudo o que vivemos, meu coração sempre será grato a cada um de vocês.<br><br>
-
-        Este site, embora simples, é uma maneira de tentar expressar um pouco da gratidão que sinto. Ele é uma forma de
-        registrar e eternizar todas as boas memórias que construímos juntos, todos os momentos especiais que formaram a
-        base do que sou hoje. **Vocês são extremamente importantes para mim**, e tudo o que vivemos juntos estará sempre
-        guardado com muito carinho. Agora, com este pequeno gesto, quero deixar claro o quanto cada um de vocês fez (e
-        continua fazendo) a diferença na minha vida. Não importa onde a vida nos leve, o que importa é que sempre
-        teremos essas lembranças preciosas para nos lembrar de nossa amizade e do impacto que causamos uns nos
-        outros.<br><br>
-
-        Por isso, com muito amor e gratidão, deixo aqui meus mais sinceros agradecimentos a cada um de vocês. E, claro,
-        o meu carinho imenso fica registrado para sempre em meu coração. Que possamos continuar a compartilhar nossa
-        jornada, nossas vitórias e, até mesmo, nossas dificuldades, sempre com a certeza de que temos uns aos outros, em
-        qualquer momento da vida.<br><br>
-
-        <em>Com todo meu carinho,</em><br>
-        <strong>Raquel</strong>
-      </p>
-
-
-      </p>
-
-
-    </div>
-  </section>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var currentIndex = 0;
-      var slides = document.querySelectorAll('.slide');
-      // Assume each slide is shown for 8 seconds total
-      var slideInterval = 8000;
-
-      function showSlide(index) {
-        slides.forEach(function (slide) {
-          slide.style.opacity = '0';
-        });
-
-        var currentSlide = slides[index];
-        currentSlide.style.opacity = '1';
-
-        // Reapply the animation to ensure it starts from the beginning for each slide
-        var img = currentSlide.querySelector('img');
-        img.style.animation = 'none'; // Reset the animation
-        // Trigger reflow to apply the reset
-        void img.offsetWidth;
-        // Re-apply the correct animation based on the slide index
-        switch (index % 4) {
-          case 0:
-            img.style.animation = 'panRight 10s ease-in-out infinite';
-            break;
-          case 1:
-            img.style.animation = 'panDown 10s ease-in-out infinite';
-            break;
-          case 2:
-            img.style.animation = 'panLeft 10s ease-in-out infinite';
-            break;
-          case 3:
-            img.style.animation = 'panUp 10s ease-in-out infinite';
-            break;
-        }
-      }
-
-      function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-      }
-
-      // Initially display the first slide
-      showSlide(currentIndex);
-      // Set the interval for changing slides, adjusted to match the CSS transition
-      setInterval(nextSlide, slideInterval);
-    });
-
-
-  </script>
-
-   <script src="js/theme-toggle.js"></script>
 </body>
-
 </html>
