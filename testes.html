@@ -1,269 +1,252 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vídeo Repetido</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="stylesheet" href="css/theme.css" />
+  <title>Amigos</title>
   <style>
-    body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Poppies;
+      background-color: #fafafa;
+      padding: 40px;
 
-.video-pattern-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-auto-rows: 150px;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.video-grid video {
-   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.content-overlay {
-  position: relative;
-  z-index: 1;
-  color: white;
-  text-align: center;
-  padding-top: 20vh;
-}
-
-p{
-  color: black;
-   font-family: Poppies;
-   font-weight: bolder;
-}
-
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      font-size: 1.3rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .button-group button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background: #0e0f28;
+      color: white;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+    .button-group button:hover {
+      background: #1c1d3c;
+    }
   </style>
 </head>
 <body>
 
-  <div class="video-pattern-container">
-    <!-- Vários vídeos menores para criar o padrão -->
-    <div class="video-grid">
-      <!-- Você pode repetir esse <video> quantas vezes quiser -->
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-      <video autoplay muted loop playsinline>
-        <source src="img/video_site.mp4" type="video/mp4" />
-      </video>
-   
-      <!-- Adicione mais blocos conforme o tamanho da tela -->
+ <div id="theme-toggle-container"></div>
+
+  <div class="container">
+    <div class="card">
+      <img src="img/91.jpg" alt="Foto do Amigo 1">
+      <h3>Amanda</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo1.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo1.html'">Deixar Mensagem</button>
+      </div>
     </div>
 
-    <div class="content-overlay">
-      <p>  Aos meus amigos da faculdade, vocês não apenas me acompanharam nas aulas e nas provas, mas foram a razão de eu
-        enfrentar os desafios com um sorriso no rosto. Cada dia vivido ao lado de vocês foi uma mistura de aprendizado,
-        risadas e muito companheirismo. Não importa o quão difícil fosse a matéria ou o quanto as noites de estudos se
-        alongassem, sempre havia tempo para uma piada, uma conversa descontraída ou até mesmo um desabafo que aliviava a
-        carga de pressão. Esses momentos, que surgiam entre os trabalhos em grupo, as discussões sobre projetos e os
-        cafés compartilhados, formaram uma rede de apoio que fez toda a diferença na minha jornada. Eu nunca teria
-        conseguido atravessar essa fase da minha vida sem vocês ao meu lado. Obrigada por me fazerem sentir que, mesmo
-        nas dificuldades, sempre havia um sorriso para me dar forças para seguir em frente. São memórias que eu vou
-        levar comigo para o resto da minha vida, e eu sou eternamente grata por cada uma delas.<br><br>
+    <div class="card">
+      <img src="img/97.jpg" alt="Foto do Amigo 2">
+      <h3>André</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo2.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo2.html'">Deixar Mensagem</button>
+      </div>
+    </div>
 
-        Aos meus amigos de infância, vocês foram os primeiros a me ensinar o que é amizade de verdade. Com vocês,
-        aprendi a importância da lealdade, da confiança e do carinho genuíno. Crescemos juntos, passamos por tantas
-        coisas, e mesmo com o tempo e a distância, nossa amizade sempre foi uma constante. Foram tantas tardes de
-        brincadeiras, conversas até tarde da noite, confidências e momentos de pura diversão. O que eu vivi ao lado de
-        cada um de vocês foi fundamental para me tornar quem sou hoje. Mesmo quando os caminhos da vida nos afastaram
-        fisicamente, a conexão que criamos jamais se quebrou. Eu sempre pude contar com vocês, e esse apoio imensurável
-        é um dos maiores presentes que a vida me deu. Eu sei que, independentemente da distância, nosso vínculo sempre
-        permanecerá forte. E, por tudo o que vivemos, meu coração sempre será grato a cada um de vocês.<br><br>
+    <div class="card">
+      <img src="amigo2.jpg" alt="Foto do Amigo 3">
+      <h3>Artur</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo3.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo3.html'">Deixar Mensagem</button>
+      </div>
+    </div>
 
-        Este site, embora simples, é uma maneira de tentar expressar um pouco da gratidão que sinto. Ele é uma forma de
-        registrar e eternizar todas as boas memórias que construímos juntos, todos os momentos especiais que formaram a
-        base do que sou hoje. **Vocês são extremamente importantes para mim**, e tudo o que vivemos juntos estará sempre
-        guardado com muito carinho. Agora, com este pequeno gesto, quero deixar claro o quanto cada um de vocês fez (e
-        continua fazendo) a diferença na minha vida. Não importa onde a vida nos leve, o que importa é que sempre
-        teremos essas lembranças preciosas para nos lembrar de nossa amizade e do impacto que causamos uns nos
-        outros.<br><br>
+    <div class="card">
+      <img src="img/73.jpg" alt="Foto do Amigo 4">
+      <h3>Kaio</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo4.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo4.html'">Deixar Mensagem</button>
+      </div>
+    </div>
 
-        Por isso, com muito amor e gratidão, deixo aqui meus mais sinceros agradecimentos a cada um de vocês. E, claro,
-        o meu carinho imenso fica registrado para sempre em meu coração. Que possamos continuar a compartilhar nossa
-        jornada, nossas vitórias e, até mesmo, nossas dificuldades, sempre com a certeza de que temos uns aos outros, em
-        qualquer momento da vida.<br><br>
-            
-       <em>A amizade é uma alma compartilhada entre diferentes corações.</em>
+    <div class="card">
+      <img src="img/153.jpg" alt="Foto do Amigo 5">
+      <h3>Bruno</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo5.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo5.html'">Deixar Mensagem</button>
+      </div>
+    </div>
 
-         <br><br>
-        <em>Com todo meu carinho,</em><br>
-        <strong>Raquel</strong><p>
+    <div class="card">
+      <img src="img/96.jpeg" alt="Foto do Amigo 6">
+      <h3>Farley</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo6.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo6.html'">Deixar Mensagem</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/149.jpg" alt="Foto do Amigo 7">
+      <h3>Felipe</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo7.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo7.html'">Deixar Mensagem</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/61.JPG" alt="Foto do Amigo 8">
+      <h3>Gessica</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo8.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo8.html'">Deixar Mensagem</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/122.jpeg" alt="Foto do Amigo 9">
+      <h3>Gisele</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo9.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo9.html'">Deixar Mensagem</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/96.jpeg" alt="Foto do Amigo 10">
+      <h3>Jamily</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo10.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo10.html'">Deixar Mensagem</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/67.JPG" alt="Foto do Amigo 11">
+      <h3>Jhennyf</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo11.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo11.html'">Deixar Mensagem</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/95.jpg" alt="Foto do Amigo 12">
+      <h3>João</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo12.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo12.html'">Deixar Mensagem</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/128.jpeg" alt="Foto do Amigo 13">
+      <h3>Karol</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo13.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo13.html'">Deixar Mensagem</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/129.jpg" alt="Foto do Amigo 14">
+      <h3>Lusquinha</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo14.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo14.html'">Deixar Mensagem</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/68.jpg" alt="Foto do Amigo 15">
+      <h3>Nanda</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo15.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo15.html'">Deixar Mensagem</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/180.jpeg" alt="Foto do Amigo 16">
+      <h3>Ruth</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo16.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo16.html'">Deixar Mensagem</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/123.jpeg" alt="Foto do Amigo 17">
+      <h3>Tesouro</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo17.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo17.html'">Deixar Mensagem</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/65.jpg" alt="Foto do Amigo 18">
+      <h3>Vanessa</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo18.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo18.html'">Deixar Mensagem</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/132.jpg" alt="Foto do Amigo 19">
+      <h3>Walmir</h3>
+      <div class="button-group">
+        <button onclick="location.href='pagina_amigo19.html'">Ver Página</button>
+        <button onclick="location.href='mensagem_amigo19.html'">Deixar Mensagem</button>
+      </div>
     </div>
   </div>
 
+  
+<script src="js/theme-toggle.js"></script>
 </body>
 </html>
