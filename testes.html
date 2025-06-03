@@ -70,7 +70,8 @@
   </style>
 </head>
 <body>
-  <div id="navbar-container"></div>
+ <div id="menu-placeholder"></div>
+
 
  <div id="theme-toggle-container"></div>
 
@@ -250,6 +251,20 @@
   
 <script src="js/theme-toggle.js"></script>
 
-   <script src="js/navbar.js"></script>
+  <script>
+  fetch('menu.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('menu-placeholder').innerHTML = data;
+      // Executa o JS do menu após carregar.
+      const menuToggle = document.getElementById('menu-toggle');
+      const nav = document.getElementById('nav');
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+    });
+</script>
+
 </body>
 </html>

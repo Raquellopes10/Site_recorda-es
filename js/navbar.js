@@ -1,6 +1,8 @@
-// navbar.js
-fetch('/navbar.html')
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById('navbar-container').innerHTML = data;
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("menu-toggle");
+  const links = document.getElementById("nav-links");
+
+  toggle.addEventListener("click", () => {
+    links.classList.toggle("active");
   });
+});
