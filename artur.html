@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gessi.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <title>Artur
+    </title>
+</head>
+
+<body>
+
+    <div id="theme-toggle-container"></div>
+    <img src="img/96.jpeg" alt="Gessica" />
+    <div class="content">
+
+        <h1>Artur</h1>
+        <p> Artur é intensidade pura — expressivo, sincero e impossível de não notar por onde passa. No começo da
+            faculdade, ele mesmo dizia que não chegava perto de mim porque achava que eu tinha "cara de poucos amigos"
+            (e talvez eu tivesse mesmo, rs). </p>
+        <p> Mas bastou ele me conhecer de verdade pra perceber que, por trás da cara fechada, tem uma pessoa de coração
+            aberto. E desde então, nasceu uma amizade cheia de risadas, companheirismo e muitas histórias boas. </p>
+        <p> Engraçado por natureza, Artur tem o dom de transformar qualquer momento em diversão — e quando o assunto é
+            treino, então, não tem melhor parceiro. Sempre motivando, puxando junto, e claro, soltando piadas no meio do
+            esforço. </p>
+        <p> Ter o Artur por perto é ter a certeza de leveza, amizade sincera e muita energia boa. Um amigo que fala com
+            o rosto, com o corpo e com o coração. </p>
+
+
+        <div class="galeria">
+            <h2>Momentos com Artur 📸</h2>
+            <div class="fotos">
+                <img src="img/185.jpg" alt="Gessica em um momento especial" />
+                <img src="img/72.jpg" alt="Gessica sorrindo" />
+                
+
+
+                <!-- Vídeo com estilo semelhante às imagens -->
+
+            </div>
+        </div>
+
+
+        <a href="testes.html">← Voltar para a galeria</a>
+    </div>
+
+
+
+    <script>
+        // Animação com GSAP
+        gsap.from(".content", {
+            opacity: 0,
+            y: 50,
+            duration: 1.5,
+            ease: "power3.out"
+        });
+
+        gsap.from("img", {
+            opacity: 0,
+            scale: 0.8,
+            duration: 1.2,
+            delay: 0.3,
+            ease: "power3.out"
+        });
+    </script>
+
+    <script src="js/theme-toggle.js"></script>
+</body>
+
+</html>
