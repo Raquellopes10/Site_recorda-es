@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/gessi.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <title>Pagani</title>
+</head>
+
+<body>
+    <div id="theme-toggle-container"></div>
+    <img src="img/73.jpg" alt="Gessica" />
+    <div class="content">
+       
+        <h1>Pagani</h1>
+        <p> Pagani é aquele amigo parceiro de verdade — presente nas horas boas, firme nas difíceis, e sempre pronto pra
+            ajudar quando a gente mais precisa. </p>
+        <p> Ele, junto com o Kaio, passou meses tentando me convencer a ir pra academia. Foram uns seis meses de
+            insistência, paciência e persistência... e eu só tenho a agradecer. Ir foi, sem dúvida, uma das melhores
+            decisões que tomei, e parte disso é mérito deles. </p>
+        <p> Ter o Pagani por perto é ter apoio garantido, amizade verdadeira e alguém em quem confiar de olhos fechados.
+            Um amigo que faz a diferença, e que torna a caminhada mais leve, mais forte e muito mais divertida. </p>
+        <div class="galeria">
+            <h2>Momentos com Kaio 📸</h2>
+            <div class="fotos">
+                <img src="img/1.jpg" alt="Gessica em um momento especial" />
+                <img src="img/3.jfif" alt="Gessica sorrindo" />
+                <img src="img/4.JPG" alt="Gessica e amigas" />
+                <img src="img/7.jpg" alt="Gessica e amigas" />
+                <img src="img/13.jpg" alt="Gessica e amigas" />
+                <img src="img/16.jpg" alt="Gessica e amigas" />
+                <img src="img/24.jpg" alt="Gessica e amigas" />
+                <img src="img/69.jpg" alt="Gessica e amigas" />
+                <img src="img/77.jpeg" alt="Gessica e amigas" />
+                <img src="img/99.jpg" alt="Gessica e amigas" />
+                <img src="img/107.jpg" alt="Gessica e amigas" />
+                <img src="img/151.jpg" alt="Gessica e amigas" />
+               
+
+                <!-- Vídeo com estilo semelhante às imagens -->
+                <video class="video-galeria" controls>
+                    <source src="img/70.mp4" type="video/mp4">
+                    Seu navegador não suporta o vídeo.
+                </video>
+
+                 <video class="video-galeria" controls>
+                    <source src="img/105.mp4" type="video/mp4">
+                    Seu navegador não suporta o vídeo.
+                </video>
+            </div>
+        </div>
+
+
+        <a href="testes.html">← Voltar para a galeria</a>
+    </div>
+
+
+
+    <script>
+        // Animação com GSAP
+        gsap.from(".content", {
+            opacity: 0,
+            y: 50,
+            duration: 1.5,
+            ease: "power3.out"
+        });
+
+        gsap.from("img", {
+            opacity: 0,
+            scale: 0.8,
+            duration: 1.2,
+            delay: 0.3,
+            ease: "power3.out"
+        });
+    </script>
+
+    <script src="js/theme-toggle.js"></script>
+</body>
+
+</html>
