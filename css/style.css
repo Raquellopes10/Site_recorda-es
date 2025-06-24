@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #0e0f28;
+  color: white;
   height: 100vh;
   display: grid;
   place-items: center;
@@ -61,47 +62,16 @@ body {
 
 .btn {
   border-radius: 10px;
-  border: 2px solid #0e0f28;
+  border: 2px solid white;
+  background-color: white;
+}
+
+.btn:hover{
+  background-color:rgba(0, 0, 0, 0.3) ;
 }
 
 #Ir{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-
-/*Modo Dark */
-body.dark-theme {
-  background-color: #0e0f28;
-  color: white;
-}
-
-body.dark-theme a {
-  color: white;
-}
-
-body.dark-theme a:hover {
-  color: #cccccc;
-}
-
-body.dark-theme p {
-  color: white;
-}
-
-/* Ajustes adicionais para o modo escuro */
-body.dark-theme .intro h1,
-body.dark-theme .intro p {
-  color: white;
-}
-
-body.dark-theme .btn {
-  background-color: white;
-  color: #0e0f28;
-  border-color: white;
-}
-
-body.dark-theme .btn:hover {
-  background-color: #ffffff33;
-  color: white;
-  border-color: white;
-}
 
